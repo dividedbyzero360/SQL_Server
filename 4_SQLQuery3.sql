@@ -14,5 +14,8 @@ Insert into tblGender values (1,'Male'), (2,'Female'),(3,'UnKnown')
 ALTER TABLE tblPerson ADD CONSTRAINT DF_GenderID 
 DEFAULT 3 FOR GenderId
 
-Insert into tblPerson (ID, NAme, Email) values (2,'Racktim','racktim.dutta@gmail.com')
-Insert into tblPerson (ID, NAme, Email,GenderId) values (3,'Satyajeet','Satyajeet.dowra@gmail.com',NULL)
+Insert into tblPerson (ID, NAme, Email) values (2,'Racktim','racktim.dutta@gmail.com')  -- GenderID default value
+Insert into tblPerson (ID, NAme, Email,GenderId) values (3,'Satyajeet','Satyajeet.dowra@gmail.com',NULL) -- GenderID null
+
+SELECT * FROM tblPerson
+SELECT * FROM tblGender
